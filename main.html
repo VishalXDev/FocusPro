@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FocusPro – Pomodoro Timer</title>
+
+    <!-- Link to Favicon -->
+    <link rel="icon" href="assets/Timer.jpg" type="image/x-icon" />
+
+    <!-- Or if you are using a PNG -->
+    <!-- <link rel="icon" href="favicon.png" type="image/png" /> -->
+
+    <link rel="stylesheet" href="Focus.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>FocusPro</h1>
+        <p>A minimalist Pomodoro Timer</p>
+      </header>
+      <main>
+        <div class="timer">
+          <div class="progress-circle"></div>
+          <h2 id="time-display">25:00</h2>
+          <button id="start-btn">Start</button>
+          <button id="reset-btn">Reset</button>
+        </div>
+        <div class="tasks">
+          <h3>Tasks</h3>
+          <ul id="task-list"></ul>
+          <input type="text" id="task-input" placeholder="Add a new task" />
+          <button id="add-task-btn">Add Task</button>
+        </div>
+      </main>
+      <footer>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+      </footer>
+    </div>
+    <script src="pro.js"></script>
+  </body>
+</html>
